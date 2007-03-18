@@ -127,6 +127,7 @@ pre {
 }
 
 img.face {
+		z-index: 5;
 		float: right;
 		margin-top: -3em;
 }
