@@ -125,3 +125,8 @@ pre {
 .white {
 	background-color: #ffffff;
 }
+
+img.face {
+		float: right;
+		margin-top: -3em;
+}
