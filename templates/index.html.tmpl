@@ -2,10 +2,10 @@
 <html>
 <head>
 <title><TMPL_VAR name></title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
-<link rel="stylesheet" href="planet.css" type="text/css">
-<link rel="alternate" type="application/rss+xml" title="<TMPL_VAR name ESCAPE="HTML">" href="rss20.xml">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link type="image/x-icon" href="favicon.ico" rel="shortcut icon"/>
+<link rel="stylesheet" href="planet.css" type="text/css"/>
+<link rel="alternate" type="application/rss+xml" title="<TMPL_VAR name ESCAPE="HTML">" href="rss20.xml"/>
 </head>
 
 <body>
@@ -32,30 +32,30 @@
 					<img src="images/ssluglogo100x100tr" alt="sslug logo" />
 				</div>
 
-				<div class="altmenu"><b>Folk:</b><br>
+				<div class="altmenu"><b>Folk:</b><br/>
 					<TMPL_LOOP Channels>
-					&nbsp;<a class="altlink" href="<TMPL_VAR link ESCAPE="HTML">" title="<TMPL_VAR title ESCAPE="HTML">"><TMPL_VAR name></a><br>
+					&nbsp;<a class="altlink" href="<TMPL_VAR link ESCAPE="HTML">" title="<TMPL_VAR title ESCAPE="HTML">"><TMPL_VAR name></a><br/>
 					</TMPL_LOOP>
 
-					<br><b>Sidst opdateret:</b><br>
+					<br/><b>Sidst opdateret:</b><br/>
 					<TMPL_VAR date>
 
-					<br><br><b>Disclaimer:</b><br>
+					<br/><br/><b>Disclaimer:</b><br/>
 					Dette er folks egne meninger og har ikke nødvendigvis nogen forbindelse til hvad SSLUG mener.
 
-					<br><br><b>Kom på:</b><br>
+					<br/><br/><b>Kom på:</b><br/>
 					Kontakt <a href="mailto:planet@sslug.dk">planet@sslug.dk</a> hvis du føler du vil være her.
-					<br><br>
+					<br/><br/>
 					<div align="center">
 						<a href="rss20.xml">
-							<img src="images/rss20.png" border="0" alt="Syndicate this Planet">
-						</a><br>
+							<img src="images/rss20.png" border="0" alt="Syndicate this Planet"/>
+						</a><br/>
 						<a href="opml.xml">
-							<img src="images/opml.png" border="0" alt="Blogroll">
-						</a><br>
+							<img src="images/opml.png" border="0" alt="Blogroll"/>
+						</a><br/>
 					</div>
 
-					<br><br><b>Powered by:</b><br>
+					<br/><br/><b>Powered by:</b><br/>
 					<a href="http://www.planetplanet.org/">Planet</a>
 				</div>
 			</td>
@@ -93,7 +93,7 @@
 
 				<div class="entrycontent"><div>
 					<TMPL_IF channel_face>
-					<img class="face" src="faces/<TMPL_VAR channel_face ESCAPE="HTML">" alt="<TMPL_VAR channel_name>" align="right">
+					<img class="face" src="faces/<TMPL_VAR channel_face ESCAPE="HTML">" alt="<TMPL_VAR channel_name>" align="right"/>
 					</TMPL_IF>
 				<TMPL_VAR content>
 				</div>
