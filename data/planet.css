@@ -29,10 +29,12 @@ div.dateheading {
 	font-size: 1.6em;
 	font-weight: bold;
 	padding: 3px 3px 3px 5px;
+	clear: both;
 }
 
 div.entryheading {
 	background-color: #EFEFEF;
+	clear: both;
 }
 
 span.entryheading {
@@ -52,7 +54,7 @@ div.entrycontent pre {
 
 div.personheading {
 	background-color: #DEE3E7;
-	clear: all;
+	clear: both;
 }
 
 span.personheading {
