@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title><TMPL_VAR name></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link type="image/x-icon" href="favicon.ico" rel="shortcut icon"/>
+<link rel="stylesheet" href="ahf.css" type="text/css"/>
+<link rel="alternate" type="application/rss+xml" title="<TMPL_VAR name ESCAPE="HTML">" href="rss20.xml"/>
+</head>
+
+<body>
+<table cellpadding="0" cellspacing="0" width="100%" border="0">
+	<tbody>
+		### Top fancy header ;)
+		<tr valign="top">
+			<td class="white"><img src="images/corner2-1" alt="" width="17" height="17" /></td>
+			<td class="white">&nbsp;</td>
+			<td class="white"><img src="images/corner2-2" alt="" width="17" height="17" /></td>
+
+			<td>&nbsp;</td>
+
+			<td class="white"><img src="images/corner2-1" alt="" width="17" height="17" /></td>
+			<td class="white">&nbsp;</td>
+			<td class="white"><img src="images/corner2-2" alt="" width="17" height="17" /></td>
+		</tr>
+		<tr>
+
+			### Menu
+			<td class="white">&nbsp;</td>
+			
+			<td class="leftmenu" width="20%">
+				<div align="center">
+					<img src="images/planet175.png" alt="p.o.d logo"/><br /><br />
+					<b>PLANET.OPENSOURCE.DK</b><br /><br />
+				</div>
+
+				<div class="altmenu"><b>Folk:</b><br/>
+					<TMPL_LOOP Channels>
+					&nbsp;<a class="altlink" href="<TMPL_VAR link ESCAPE="HTML">" title="<TMPL_VAR title ESCAPE="HTML">"><TMPL_VAR name></a><br/>
+					</TMPL_LOOP>
+
+					<br/><b>Sidst opdateret:</b><br/>
+					<TMPL_VAR date>
+
+					<br/><br/><b>Disclaimer:</b><br/>
+					Dette er folks egne meninger og har ikke nødvendigvis nogen forbindelse til hvad danske opensource-foreninger mener.
+
+					<br/><br/><b>Kom på:</b><br/>
+					Kontakt <a href="mailto:planet@opensource.dk">planet@opensource.dk</a> hvis du føler du vil være her. <br /><br />
+					<b>Krav:</b>
+					<ul>
+					<li>Du skriver på skandinavisk og/eller på engelsk</li>
+					<li>Du har en tilknytning til skandinavien</li>
+					<li>Du er aktivt involveret i free/open source software på en eller anden måde</li>
+					<li>Du skriver en gang i mellem om noget relevant for free/open source software-verdenen</li>
+					</ul>
+					<br/><br/>
+					<div align="center">
+						<a href="rss20.xml">
+							<img src="images/rss20.png" border="0" alt="Syndicate this Planet"/>
+						</a><br/>
+						<a href="opml.xml">
+							<img src="images/opml.png" border="0" alt="Blogroll"/>
+						</a><br/>
+					</div>
+
+					<br/><br/><b>Powered by:</b><br/>
+					<a href="http://www.planetplanet.org/">Planet</a>
+				</div>
+			</td>
+			<td class="white">&nbsp;</td>
+
+			<td>&nbsp;&nbsp;&nbsp;</td>
+
+			### Indhold
+			<td class="white">&nbsp;</td>
+
+			<td class="content">
+				<TMPL_LOOP Items>
+				<TMPL_IF new_date><div class="dateheading"><TMPL_VAR new_date></div></TMPL_IF>
+
+				<TMPL_IF new_channel>
+				<div class="personheading">
+					<span class="personheading">
+						<a href="<TMPL_VAR channel_link ESCAPE="HTML">" title="<TMPL_VAR channel_title ESCAPE="HTML">"><TMPL_VAR channel_name></a>
+					</span>
+
+					<TMPL_IF channel_username>
+						a.k.a. <b><TMPL_VAR channel_username></b>
+					</TMPL_IF>
+					<TMPL_IF channel_project>
+						&nbsp;<b>(<TMPL_VAR channel_project ESCAPE="HTML">)</b>
+					</TMPL_IF>
+				</div>
+				</TMPL_IF>
+
+				<TMPL_IF title>
+				<div class="entryheading">
+					<span class="entryheading"><a href="<TMPL_VAR link ESCAPE="HTML">"><TMPL_VAR title></a></span> (<TMPL_VAR date>)
+				</div>
+				</TMPL_IF>
+
+				<div class="entrycontent"><div>
+					<TMPL_IF channel_face>
+					<img class="face" src="faces/<TMPL_VAR channel_face ESCAPE="HTML">" alt="<TMPL_VAR channel_name>" align="right"/>
+					</TMPL_IF>
+				<TMPL_VAR content>
+				</div>
+				<TMPL_IF comments>
+				<p>
+					<span class="commentlink">
+						<a href="<TMPL_VAR comments ESCAPE="HTML">">Leave a comment</a>
+					</span>
+				</p>
+				</TMPL_IF>
+				</div>
+				</TMPL_LOOP>
+			</td>
+
+			<td class="white">&nbsp;</td>
+		</tr>
+
+		<tr valign="bottom">
+			<td class="white"><img src="images/corner2-3" alt="" width="17" height="17" /></td>
+			<td class="white">&nbsp;</td>
+			<td class="white"><img src="images/corner2-4" alt="" width="17" height="17" /></td>
+
+			<td>&nbsp;</td>
+
+			<td class="white"><img src="images/corner2-3" alt="" width="17" height="17" /></td>
+			<td class="white">&nbsp;</td>
+			<td class="white"><img src="images/corner2-4" alt="" width="17" height="17" /></td>
+		</tr>
+	</tbody>
+</table>
+
+</body>
+</html>
