@@ -48,10 +48,6 @@ div.entrycontent {
 	min-height: 85px;
 }
 
-div.entrycontent pre {
-	overflow: auto;
-}
-
 div.personheading {
 	background-color: #DEE3E7;
 	clear: both;
@@ -111,18 +107,15 @@ td.content {
 
 pre {
 	padding: 0.5em;
-	font-family: Lucida Console, Courier;
+	font-family: monospace;
 	color: #000000;
 	font-size: 0.9em;
+	border: 1px solid #c0c0f0;
 }
 
 img {
 	border: 0px;
 	max-width: 500px;
-}
-
-pre {
-	border-left: 2px double grey;
 }
 
 .white {
